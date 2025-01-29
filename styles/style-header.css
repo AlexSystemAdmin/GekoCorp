@@ -1,0 +1,244 @@
+@import url(style-global.css);
+
+.header-bg{
+    background-image: url("../images/header/header_bg.jpg");
+    background-position: -0.5vw center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.header-inner__logo{
+    width: clamp(9rem, 18.6vw + 2rem, 14.75rem);
+    height: clamp(4.313rem, 9vw + 0.95rem, 7.125rem);
+}
+
+.header-inner__menu{
+    color: var(--white);
+}
+
+.header-inner__connection{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.header-inner__phone-numbers{
+    font-size: clamp(1.125rem, 2.5vw - 0.14rem, 1.5rem);
+}
+
+.header-inner__list{
+    display: flex;
+    align-items: center;
+}
+
+.header-inner__item{
+    border-right: 3px solid var(--orange);
+    padding: 0 10px;
+}
+
+.header-inner__link{
+    font-weight: 600;
+    font-size: clamp(0.75rem, 1.7vw - 0.11rem, 1rem);
+    text-transform: uppercase;
+    text-align: center;
+    transition: .3s;
+}
+
+.header-inner__item:first-child
+{
+    padding-left: 0;
+}
+
+.header-inner__item:last-child{
+    padding-right: 0;
+    border-right: none;
+}
+
+.menu-button{
+    display: none;
+    background-image: url("../images/header/menu-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.banner{
+    display: flex;
+    padding-bottom: 53px;
+}
+
+.banner__inner-text{
+    max-width: clamp(28.125rem, 50vw + 3rem, 35.625rem);
+}
+
+.banner__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 4vw + 1rem, 3.75rem);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-top: 92px;
+    margin-bottom: 28px;
+}
+
+.banner__description{
+    max-width: clamp(28.125rem, 15.5vw + 23rem, 33.375rem);
+    font-weight: 500;
+    font-size: clamp(1.25rem, 0.74vw + 1rem, 1.5rem);
+    line-height: 130%;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.banner__caption{
+    font-weight: 500;
+    font-size: clamp(1.25rem, 0.74vw + 1rem, 1.5rem);
+    line-height: 130%;
+    color: var(--orange);
+    margin-bottom: 58px;
+}
+
+.banner__inner-image{
+    width: clamp(26.875rem, 43vw + 5rem, 33.188rem);
+    height: clamp(33.125rem, 30vw + 17.8rem, 37.313rem);
+    background-size: contain;
+    margin-bottom: 54px;
+    position: relative;
+}
+
+.banner__inner-image::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 546px;
+    height: 442px;
+    background: rgba(244, 122, 55, 0.3);
+    border-radius: 100%;
+    filter: blur(137px);
+}
+
+.banner__image{
+    position: absolute;
+    display: block;
+    width: 531px;
+    height: 597px;
+    top: 50px;
+    z-index: 1;
+}
+
+.header-inner__logo--mobi,
+.social--mobi,
+.header-inner__menu-mobi
+{
+    display: none;
+}
+
+
+@media(hover:hover){
+    .header-inner__link:hover{
+        opacity: .5;
+    }
+}
+
+
+
+@media(max-width:1150px){
+    .header-bg{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width:780px){
+    .header-bg {
+        background-position: 50% center;
+    }
+
+    .header-inner__logo{
+        display: none;
+    }
+    .header-inner__phone-numbers .phone-numbers__item:first-child{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+
+    .header-inner{
+        flex-direction: column;
+        padding-top: 26px;
+    }
+
+    .header-inner__menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .header-inner__nav{
+        display: none;
+    }
+
+    .banner {
+        padding-bottom: 45px;
+    }
+
+    .banner__title {
+        margin-top: 23px;
+        margin-bottom: 18px;
+    }
+
+    .banner__description {
+        margin-bottom: 11px;
+    }
+
+    .banner__caption {
+        margin-bottom: 32px;
+    }
+
+    .banner__inner-image{
+        display: none;
+    }
+
+    .header-inner__logo--mobi
+    {
+        width: 144px;
+        height: 69px;
+        display: block;
+    }
+
+    .social--mobi{
+        display: flex;
+        gap: 26px;
+    }
+
+    .social--mobi .social__link{
+        width: 34px;
+        height: 34px;
+    }
+
+    .header-inner__menu-mobi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-inner__phone-numbers{
+        font-size: 24px;
+    }
+}
