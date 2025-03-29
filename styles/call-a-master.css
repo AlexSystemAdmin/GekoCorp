@@ -1,0 +1,226 @@
+.call-a-master{
+    padding-top: 42px;
+}
+
+.master-box{
+    margin-bottom: 56px;
+}
+
+.master-box__form{
+    max-width: 528px;
+    margin: 0 auto;
+}
+
+.master-box__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    max-width: 528px;
+    margin: 0 auto 33px;
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 10px;
+}
+
+.master-box__label{
+    display: block;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--dark-blue);
+    max-width: 250px;
+    margin-bottom: 11.2px;
+}
+
+.master-box__input{
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    padding: 15px 0 13px 19px;
+    width: 96%;
+}
+
+.master-box__input-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/*.master-box__input-item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 48px;
+    background-image: url(../images/call-a-master/Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 0;    
+    right: 0;
+    cursor: pointer;
+}*/
+
+.master-box__input::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--grey);
+}
+
+.master-box__input-button{
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 48px;
+    background-image: url(../images/call-a-master/Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    top: 0;    
+    right: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/*#devices{
+    display: none;
+}*/
+
+.master-box__list{
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    min-height: 110px;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--light-grey);
+}
+
+.master-box__list > li{
+    padding: 5px 5px 5px 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.master-box__input-name{
+    margin-bottom: 21px;
+}
+
+.master-box__input-tel{
+    margin-bottom: 20px;
+}
+
+.master-box__textarea{
+    width: 92.4%;
+    overflow-y: auto;
+    resize: none;
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    height: 180px;
+    padding: 11px 19px;
+    margin-bottom: 6px;
+}
+
+.master-box__textarea::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--grey);
+}
+
+.master-box__errors{
+    color: var(--red);
+}
+
+.agreement{
+    margin-bottom: 32px;
+}
+
+.agreement__label{
+    display: flex;
+    gap: 19px;
+}
+
+.agreement__label::before{
+    content: '';
+    display: block;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agreement__checkbox{
+    display: none;
+}
+
+.agreement__checkbox:checked + .agreement__label::before{
+    background-image: url(../images/call-a-master/checkbox.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.agreement__checkbox:not(:checked) + .agreement__label::before{
+    background-color: transparent;
+}
+
+.agreement__description{
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--dark-blue);
+}
+
+.agreement__description a{
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.master-box__button{
+    display: block;
+    border-radius: 10px;
+    padding: 18px 32px;
+    background: radial-gradient(50% 50% at 50% 50%, #f6a70c 0%, #e7742e 100%);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    border: 1px solid transparent;
+    margin: 0 auto;
+    transition: .3s;
+    /*pointer-events: none;*/
+    cursor: pointer;
+}
+
+.call-a-master__box{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.call-a-master__description{
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--dark-blue);
+}
+
+.call-a-master__description:first-child{
+    margin-bottom: 24px;
+}
+
+@media(hover: hover){
+
+    .master-box__list > li:hover{
+        background-color: var(--white);
+    }
+
+    .master-box__button:hover{
+        background: transparent;
+        border: 1px solid var(--orange);
+    }
+}

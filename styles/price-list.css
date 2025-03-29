@@ -6,7 +6,7 @@
 .price-list__price-list-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px 24px;
+    gap: 39px 22px;
     color: var(--dark-blue);
 }
 
@@ -26,12 +26,12 @@
     text-transform: uppercase;
     text-align: center;
     max-width: 325px;
-    margin: 0 auto 16px;
+    margin: 0 auto 17px;
     
 }
 
 .price-list-grid__text{
-    margin-bottom: 26px;
+    margin-bottom: 28px;
     padding-left: 9px;
 }
 
@@ -85,14 +85,14 @@
 .price-list-grid__link{
     display: block;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     /*line-height: 120%;*/
     line-height: 1.3;
     text-transform: uppercase;
     text-align: center;
     color: var(--dark-blue);
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 14px 20px;
     border-radius: 10px;
     background: var(--light-grey);
     max-width: 263px;
