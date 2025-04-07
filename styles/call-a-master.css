@@ -1,5 +1,5 @@
 .call-a-master{
-    padding-top: 42px;
+    padding-top: 41px;
 }
 
 .master-box{
@@ -13,7 +13,7 @@
 
 .master-box__title{
     font-weight: 500;
-    font-size: 48px;
+    font-size: clamp(2.125rem, 2.4vw + 1.4rem, 3rem);
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
@@ -222,5 +222,20 @@
     .master-box__button:hover{
         background: transparent;
         border: 1px solid var(--orange);
+    }
+}
+
+@media(max-width: 800px){
+    .call-a-master__box{
+        flex-direction: column-reverse;
+    }
+
+    .agreement__description{
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .master-box__button{
+        font-size: 20px;
     }
 }

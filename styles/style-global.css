@@ -65,8 +65,8 @@ ul{
     content: '';
     display: block;
     background-image: url(../images/header/Top-arrow-right.svg);
-    width: clamp(1.75rem, 2vw + 0.69rem, 2rem);
-    height: clamp(1.75rem, 2vw + 0.69rem, 2rem);
+    width: clamp(1.75rem, 2vw + 0.64rem, 2rem);
+    height: clamp(1.75rem, 2vw + 0.64rem, 2rem);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -146,5 +146,17 @@ ul{
         background: var(--dark-blue);
         border: 1px solid rgba(231, 116, 46, 1);
         color: var(--orange);
+    }
+}
+
+@media(max-width: 780px){
+    .phone-numbers__item::before{
+        width: 32px;
+        height: 32px;
+    }
+
+    .button{
+        padding: 17px 31px 17px 31px;
+        letter-spacing: 0;
     }
 }

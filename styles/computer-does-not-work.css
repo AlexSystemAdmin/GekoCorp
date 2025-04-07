@@ -8,7 +8,7 @@
 .computer-does-not-work{
     background: var(--dark-blue);
     padding-top: 40px;
-    padding-bottom: 39px;
+    padding-bottom: 40px;
 }
 
 .computer-does-not-work__title{
@@ -177,14 +177,18 @@
 @media(max-width: 1060px){
 
     .computer-does-not-work {
-        padding-top: 32px;
+        padding-top: 33px;
         padding-bottom: 38px;
+    }
+
+    .computer-does-not-work__title {
+        margin-bottom: 18px;
     }
 
     .computer-does-not-work__banner{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        row-gap: 37px;
+        row-gap: 40px;
     }
 
     .computer-does-not-work__cover{
@@ -193,13 +197,13 @@
 
     .computer-does-not-work__text {
         max-height: none;
-        padding-top: 39px;
+        padding-top: 40px;
         border-left: none;
         border-top: 2px solid var(--white);
     }
 
     .computer-does-not-work__text-flex{
-        margin-bottom: 30px;
+        margin-bottom: 32px;
         padding-left: 0;
     }
 

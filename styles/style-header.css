@@ -179,6 +179,10 @@
         padding-top: 26px;
     }
 
+    .header-inner__connection{
+        margin-bottom: 15px;
+    }
+
     .header-inner__menu{
         display: flex;
         width: 100%;
@@ -198,12 +202,12 @@
     }
 
     .banner__title {
-        margin-top: 23px;
-        margin-bottom: 18px;
+        margin-top: 34px;
+        margin-bottom: 20px;
     }
 
     .banner__description {
-        margin-bottom: 11px;
+        margin-bottom: 12px;
     }
 
     .banner__caption {
@@ -224,6 +228,7 @@
     .social--mobi{
         display: flex;
         gap: 26px;
+        padding-top: 20px;
     }
 
     .social--mobi .social__link{
