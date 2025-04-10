@@ -34,10 +34,11 @@
 }
 
 .master-box__input{
+    box-sizing: border-box;
     border: 1px solid var(--grey);
     border-radius: 6px;
     padding: 15px 0 13px 19px;
-    width: 96%;
+    width: 100%;
 }
 
 .master-box__input-item{
@@ -70,6 +71,7 @@
 .master-box__input-button{
     display: block;
     position: absolute;
+    transition: .3s;
     width: 49px;
     height: 48px;
     background-image: url(../images/call-a-master/Arrow.svg);
@@ -112,12 +114,13 @@
 }
 
 .master-box__textarea{
-    width: 92.4%;
+    width: 100%;
+    box-sizing: border-box;
     overflow-y: auto;
     resize: none;
     border: 1px solid var(--grey);
     border-radius: 6px;
-    height: 180px;
+    height: 204px;
     padding: 11px 19px;
     margin-bottom: 6px;
 }
@@ -214,6 +217,12 @@
 }
 
 @media(hover: hover){
+    .master-box__input-button:hover{
+        opacity: .7;
+    }
+}
+
+@media(hover: hover){
 
     .master-box__list > li:hover{
         background-color: var(--white);
@@ -226,16 +235,48 @@
 }
 
 @media(max-width: 800px){
+    .call-a-master {
+        padding-top: 33px;
+    }
+
     .call-a-master__box{
         flex-direction: column-reverse;
+        gap: 31px;
+    }
+
+    .call-a-master__description {
+        line-height: 139.0%;
+    }
+
+    .call-a-master__img{
+        width: 100%;
+    }
+
+    .master-box {
+        margin-bottom: 33px;
+    }
+
+    .master-box__title {
+        margin: 0 auto 25px;
+        border-bottom: 2px solid var(--orange);
+        padding-bottom: 17px;
+    }
+
+    .master-box__textarea {
+        margin-bottom: 20px;
+    }
+
+    .agreement {
+        margin-bottom: 23px;
     }
 
     .agreement__description{
         font-size: 16px;
-        line-height: 140%;
+        line-height: 139%;
     }
 
     .master-box__button{
         font-size: 20px;
+        padding: 17px 32px 17px 32px;
     }
 }

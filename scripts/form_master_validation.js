@@ -122,3 +122,9 @@ form.addEventListener('submit', (event) => {
 form.addEventListener('input', (event) => {
     onInput(event.target);
 })
+
+inputName.addEventListener('keypress', (event) => {
+    if(!isNaN(event.key)){
+        event.preventDefault();
+    }
+})
