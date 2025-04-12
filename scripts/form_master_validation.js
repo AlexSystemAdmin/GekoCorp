@@ -61,10 +61,10 @@ function errorElementHandle(errorElement){
 
 function setStyleOfInputElement(element, areErrors){
     if(areErrors){
-        element.style.borderColor = '#FF0000';
+        element.classList.add('error');
     }
     else{
-        element.style.borderColor = '#b4b4b4';
+        element.classList.remove('error');
     }
 }
 
@@ -120,7 +120,7 @@ form.addEventListener('submit', (event) => {
 });
 
 form.addEventListener('input', (event) => {
-    onInput(event.target);
+    //onInput(event.target);
 })
 
 inputName.addEventListener('keypress', (event) => {
