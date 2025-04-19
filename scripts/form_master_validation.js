@@ -120,7 +120,7 @@ form.addEventListener('submit', (event) => {
 });
 
 form.addEventListener('input', (event) => {
-    //onInput(event.target);
+    onInput(event.target);
 })
 
 inputName.addEventListener('keypress', (event) => {

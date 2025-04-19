@@ -1,5 +1,6 @@
 .call-a-master{
     padding-top: 41px;
+    padding-bottom: 58px;
 }
 
 .master-box{
@@ -248,6 +249,7 @@
 @media(max-width: 800px){
     .call-a-master {
         padding-top: 33px;
+        padding-bottom: 48px;
     }
 
     .call-a-master__box{
