@@ -26,7 +26,7 @@ var swiper = new Swiper('.slider-customer-reviews', {
       },
       1109: {
         slidesPerView: 3,
-        slidesPerGroup: 3
+        slidesPerGroup: 1
       }
     }
   });

@@ -29,6 +29,20 @@
     align-items: center;
   }
 
+  .swiper-container__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 2.8vw + 1rem, 3rem);
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    max-width: 532px;
+    margin: 0 auto 37px;
+    padding-top: 40px;
+    padding-bottom: 17px;
+    border-bottom: 3px solid var(--white);
+  }
+
   .swiper-slide__author{
     display: flex ;
     align-items: center;
@@ -283,6 +297,12 @@
 
   .swiper-slide--customer-reviews{
     padding-bottom: 31px;
+  }
+
+  .swiper-container__title{
+    padding-top: 33px;
+    margin-bottom: 10px;
+    border-bottom: transparent;
   }
 
   .swiper-slide__date-cover::before,
