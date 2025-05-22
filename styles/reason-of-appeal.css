@@ -1,3 +1,7 @@
+.reason-of-appeal{
+    padding-bottom: 48px;
+}
+
 .reason-of-appeal__background{
     padding-top: 46px;
     padding-bottom: 40px;
@@ -218,6 +222,12 @@ reason-of-appeal-grid__vertical-line--mod{
 
     .reason-of-appeal__title{
         font-size: clamp(2.125rem, 2vw + 1.5rem, 3rem);
+    }
+}
+
+@media(max-width: 759px){
+    .reason-of-appeal {
+        padding-bottom: 51px;
     }
 }
 

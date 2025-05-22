@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles/computer-does-not-work.css">
     <link rel="stylesheet" href="styles/call-a-master.css">
     <link rel="stylesheet" href="styles/reason-of-appeal.css">
+    <link rel="stylesheet" href="styles/customer-reviews.css">
+    <link rel="stylesheet" href="styles/slider-customer-reviews.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <title>GekoCorp</title>
  </head>
  <body>
@@ -431,11 +434,77 @@
             </div>
         </div>
     </section>
+    <section class="customer-reviews">
+        <div class="container container--customer-reviews">
+            <h2 class="customer-reviews__title">Отзывы клиентов</h2>
+            <div class="swiper-container slider-customer-reviews">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide--customer-reviews">
+                    <div class="swiper-slide__author">
+                        <span class="author__initial">А</span>
+                        <p class="author__name">Александр Михайловский</p>
+                    </div>
+                    <div class="swiper-slide__date-cover">
+                        <p class="date-cover__date">01 июня 2021</p>
+                    </div>
+                    <p class="swiper-slide__text">Самый лучший сервис! Перестали открываться программы. Пригласила&nbsp;мастера в выходной день. Мастер приехал за 40 минут. Устранил все вирусы, установил новый пакет программ, бессрочный антивирус, почистил от пыли системный блок. Недорого. Составлен договор, все официально. Спасибо! При необходимости в будущем буду обращаться только в эту компанию. <a href="#">Читать весь отзыв</a></p>
+                  </div>
+                  <div class="swiper-slide swiper-slide--customer-reviews">
+                    <div class="swiper-slide__author">
+                        <span class="author__initial">И</span>
+                        <p class="author__name">Иван Коротков</p>
+                    </div>
+                    <div class="swiper-slide__date-cover">
+                        <p class="date-cover__date">16 февраля 2021</p>
+                    </div>
+                    <p class="swiper-slide__text">Надежный проверенный сервис. Обращалась пару раз, для меня удобно что есть выезд на дом, пришлось вызвать мастера первый раз когда племянник напортачил, мастер за 20 минут все исправил, теперь только каждый год продлеваю антивирус, все удобно и не дорого! Рекомендую!</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide--customer-reviews">
+                    <div class="swiper-slide__author">
+                        <span class="author__initial">Е</span>
+                        <p class="author__name">Елена Плотникова</p>
+                    </div>
+                    <div class="swiper-slide__date-cover">
+                        <p class="date-cover__date">23 декабря 2020</p>
+                    </div>
+                    <p class="swiper-slide__text">Спасибо за вашу работу! Теперь компьютер работает как надо, все отлично. Очень приятно что мастер по просьбе поставил родительский контроль на компьютер. Мастер с диспетчером бесплатно меня консультируют по телефону в любой день. Побольше бы таких добросовестных компаний. Спасибо!</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide--customer-reviews">
+                    <div class="swiper-slide__author">
+                        <span class="author__initial">Е</span>
+                        <p class="author__name">Елена Плотникова</p>
+                    </div>
+                    <div class="swiper-slide__date-cover">
+                        <p class="date-cover__date">23 декабря 2020</p>
+                    </div>
+                    <p class="swiper-slide__text">Спасибо за вашу работу! Теперь компьютер работает как надо, все отлично. Очень приятно что мастер по просьбе поставил родительский контроль на компьютер. Мастер с диспетчером бесплатно меня консультируют по телефону в любой день. Побольше бы таких добросовестных компаний. Спасибо!</p>
+                  </div>
+                  <div class="swiper-slide swiper-slide--customer-reviews">
+                    <div class="swiper-slide__author">
+                        <span class="author__initial">Е</span>
+                        <p class="author__name">Елена Плотникова</p>
+                    </div>
+                    <div class="swiper-slide__date-cover">
+                        <p class="date-cover__date">23 декабря 2020</p>
+                    </div>
+                    <p class="swiper-slide__text">Спасибо за вашу работу! Теперь компьютер работает как надо, все отлично. Очень приятно что мастер по просьбе поставил родительский контроль на компьютер. Мастер с диспетчером бесплатно меня консультируют по телефону в любой день. Побольше бы таких добросовестных компаний. Спасибо!</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div id="swiper-button-next" class="swiper-button-next"></div>
+                <div id="swiper-button-prev" class="swiper-button-prev swiper-button-prev-disabled"></div>
+              </div>
+              <p class="customer-reviews__link">Мы на <a href="https://www.otzovik.com">www.otzovik.com</a></p>
+              <p class="customer-reviews__link">Мы на <a href="https://www.irecommend.ru">www.irecommend.ru</a></p>
+        </div>
+    </section>
     <script src="scripts/check_device.js" defer></script>
     <script src="scripts/check_manufacturer.js" defer></script>
     <script src="scripts/form_master_validation.js" defer></script>
     <script src="scripts/phone_number_mask.js" type="module"></script>
     <script src="scripts/text_modification.js"></script>
+    <script src="scripts/slider-customer-reviews.js" type="module"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 
  </body>
  </html>
