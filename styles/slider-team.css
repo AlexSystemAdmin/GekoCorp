@@ -1,0 +1,102 @@
+.team{
+    padding-top: 41px;
+    padding-bottom: 40px;
+}
+
+.slider-team__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 1.9vw + 1.6rem, 3rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--orange);
+    max-width: 450px;
+    margin: 0 auto 33px;
+    padding-bottom: 10px;
+}
+
+.slider-team__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 39px;
+}
+
+.swiper-slide__img{
+    display: block;
+    width: clamp(15.75rem, -8vw + 21.2rem, 18rem);
+    height: clamp(15.75rem, -8vw + 21.2rem, 18rem);
+    margin: 0 auto 8px;
+}
+
+.swiper-slide__name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 13px;
+}
+
+.swiper-slide__experience{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.swiper-pagination-team{
+    display: none;
+    text-align: center;
+}
+
+.swiper-pagination-team .swiper-pagination-bullet{
+    background-color: var(--light-grey)!important;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 14px)!important;
+}
+
+.swiper-pagination-team .swiper-pagination-bullet-active{
+    background-color: var(--orange)!important;
+}
+
+@media(max-width: 649px){
+    .swiper-pagination-team{
+        display: block;
+    }
+}
+
+@media(max-width: 620px){
+    .team {
+        padding-top: 33px;
+        padding-bottom: 48px;
+    }
+
+    .slider-team{
+        margin-bottom: 27px;
+    }
+
+    .slider-team__title{
+        border-bottom: 2px solid var(--orange);
+        padding-bottom: 17px;
+        line-height: 1.19;
+        margin-bottom: 25px;
+    }
+
+    .slider-team__text {
+        margin-bottom: 29px;
+    }
+
+    .swiper-slide__img{
+        margin-bottom: 26px;
+    }
+
+    .swiper-slide__name{
+        font-size: clamp(1.5rem, -1vw + 2.2rem, 1.813rem);
+        margin-bottom: 12px;
+    }
+}
