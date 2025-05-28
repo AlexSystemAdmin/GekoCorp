@@ -1,0 +1,175 @@
+.reason-of-call__thesis{
+    background-color: var(--dark-blue);
+    padding-top: 47px;
+    padding-bottom: 46px;
+    margin-bottom: 42px;
+}
+
+.thesis__inner{
+    display: flex;
+    border-top: 3px solid var(--orange);
+    border-bottom: 3px solid var(--orange);
+    padding-top: 38px;
+    padding-bottom: 38px;
+    gap: 34px;
+}
+
+.thesis__text{
+    font-weight: 500;
+    font-size: clamp(1.25rem, 1vw + 0.87rem, 1.5rem);
+    line-height: 1.3;
+    color: var(--white);
+}
+
+.reason-of-call__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 2vw + 1.5rem, 3rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    margin-bottom: 31px;
+}
+
+.reason-of-call__flex{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 23px;
+}
+
+.reason-of-call__reason{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    min-width: 295px;
+}
+
+.reason-of-call__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--dark-blue);
+}
+
+.reason-of-call__other{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--dark-blue);
+    margin-bottom: 39px;
+}
+
+.get-a-consultation{
+    display: flex;
+    max-width: 316px;
+    margin: 0 auto;
+    background: radial-gradient(50% 50% at 50% 50%, #f6a70c 0%, #e7742e 100%);
+    border-radius: 10px;
+    padding: 14px 31px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.get-a-consultation__text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    letter-spacing: 0.1px;
+}
+
+.get-a-consultation__arrow{
+    width: 25px;
+    height: 22px;
+}
+
+@media(hover: hover){
+    .get-a-consultation:hover{
+        background: transparent;
+        border: 1px solid var(--orange);
+    }
+}
+
+@media(max-width: 799px){
+
+    .reason-of-call__thesis{
+        padding-top: 0;
+        padding-bottom: 43px;
+        margin-bottom: 33px;
+    }
+
+    .thesis__inner{
+        border-top: none;
+        border-bottom: 2px solid var(--orange);
+        flex-direction: column;
+        padding-top: 32px;
+        padding-bottom: 27px;
+        gap: 28px;
+    }
+
+    .thesis__cover{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .thesis__cover::before{
+        content: '';
+        display: block;
+        width: 118px;
+        height: 2px;
+        background-color: var(--orange);
+    }
+
+    .thesis__cover::after{
+        content: '';
+        display: block;
+        width: 118px;
+        height: 2px;
+        background-color: var(--orange);
+    }
+
+    .thesis__img{
+        width: 74px;
+        height: 71px;
+    }
+
+    .thesis__text{
+        text-align: center;
+    }
+
+    .reason-of-call__title{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .reason-of-call__flex{
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 15px;
+    }
+
+    .reason-of-call__text {
+        line-height: 1.39;
+    }
+
+    .reason-of-call__other{
+        margin-bottom: 32px;
+    }
+
+    .get-a-consultation {
+        padding: 14px 23px;
+    }
+}
+
+@media(max-width: 420px){
+    .thesis__text span {
+        display: block;
+    }
+}

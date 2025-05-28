@@ -1,6 +1,6 @@
 .team{
     padding-top: 41px;
-    padding-bottom: 40px;
+    padding-bottom: 4px;
 }
 
 .slider-team__title{
@@ -29,7 +29,7 @@
     display: block;
     width: clamp(15.75rem, -8vw + 21.2rem, 18rem);
     height: clamp(15.75rem, -8vw + 21.2rem, 18rem);
-    margin: 0 auto 8px;
+    margin: 0 auto 13px;
 }
 
 .swiper-slide__name{
@@ -73,7 +73,7 @@
 @media(max-width: 620px){
     .team {
         padding-top: 33px;
-        padding-bottom: 48px;
+        padding-bottom: 45px;
     }
 
     .slider-team{
