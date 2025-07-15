@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/price-list.css">
     <link rel="stylesheet" href="styles/computer-does-not-work.css">
     <link rel="stylesheet" href="styles/call-a-master.css">
+    <link rel="stylesheet" href="styles/form-order-a-call.css">
     <link rel="stylesheet" href="styles/reason-of-appeal.css">
     <link rel="stylesheet" href="styles/customer-reviews.css">
     <link rel="stylesheet" href="styles/slider-customer-reviews.css">
@@ -19,6 +20,99 @@
     <title>GekoCorp</title>
  </head>
  <body>
+    <form class="form-call-a-master" novalidate>
+        <h2 class="form-call-a-master__title">Вызвать мастера</h2>
+        <button type="button" class="btn-close-form"></button>
+        <label class="form-call-a-master__label">Выберите устройство</label>
+        <div class="form-call-a-master__input-item">
+            <input id="check_device--modal" type="text" class="form-call-a-master__input" placeholder="Выбрать">
+            <button id="open_device--modal" class="form-call-a-master__input-button" type="button"></button>
+            <ul id="device--modal" class="form-call-a-master__list">
+            </ul>
+        </div>
+        <label class="form-call-a-master__label">Выберите производителя</label>
+        <div class="form-call-a-master__input-item">
+            <input id="check_manufacturer--modal" type="text" class="form-call-a-master__input" placeholder="Выбрать">
+            <button id="open_manufacturers--modal" class="form-call-a-master__input-button" type="button"></button>
+            <ul id="manufacturer--modal" class="form-call-a-master__list">
+            </ul>
+        </div>
+        <div class="form-call-a-master__cover">
+            <label class="form-call-a-master__label">Ваше имя *</label>
+            <input type="text" class="form-call-a-master__input form-call-a-master__input-name" placeholder="Имя" required>
+            <p class="form-call-a-master__errors form-element-error"></p>
+        </div>
+        <div class="form-call-a-master__cover">
+            <label class="form-call-a-master__label">Ваш телефон *</label>
+            <input type="tel" id="form-call-a-master__input-tel" class="form-call-a-master__input form-call-a-master__input-tel input-tel-mask" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
+            <p class="form-call-a-master__errors form-element-error"></p>
+        </div>
+        <div class="form-call-a-master__cover">
+            <label class="form-call-a-master__label">Опишите проблему *</label>
+            <textarea class="form-call-a-master__textarea" placeholder="Текст сообщения" required></textarea>
+            <p class="form-call-a-master__errors form-element-error"></p>
+        </div>
+        <div class="form-call-a-master__cover">
+            <div class="agreement">
+                <input type="checkbox" id="form-call-a-master__checkbox" class="agreement__checkbox" required>
+                <label for="form-call-a-master__checkbox" class="agreement__label">
+                    <span class="agreement__description">Даю согласие на обработку моих персональных данных и принимаю <a href="#">политику конфиденциальности</a></span>
+                </label>
+                <p class="form-call-a-master__errors form-element-error"></p>
+            </div>
+        </div>
+        <button class="form-call-a-master__button">Отправить</button>
+    </form>
+    <form class="form-get-a-consultation" novalidate>
+        <h2 class="form-get-a-consultation__title">Получить консультацию</h2>
+        <button type="button" class="btn-close-form"></button>
+        <div class="form-get-a-consultation__cover">
+            <label class="form-get-a-consultation__label">Ваше имя *</label>
+            <input type="text" class="form-get-a-consultation__input form-get-a-consultation__input-name" placeholder="Имя" required>
+            <p class="form-get-a-consultation__errors form-element-error"></p>
+        </div>
+        <div class="form-get-a-consultation__cover">
+            <label class="form-get-a-consultation__label">Ваш телефон *</label>
+            <input type="tel" id="form-get-a-consultation__input-tel" class="form-get-a-consultation__input form-get-a-consultation__input-tel input-tel-mask" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
+            <p class="form-get-a-consultation__errors form-element-error"></p>
+        </div>
+        <div class="form-get-a-consultation__cover">
+            <div class="agreement">
+                <input type="checkbox" id="form-get-a-consultation__checkbox" class="agreement__checkbox" required>
+                <label for="form-get-a-consultation__checkbox" class="agreement__label">
+                    <span class="agreement__description">Даю согласие на обработку моих персональных данных и принимаю <a href="#">политику конфиденциальности</a></span>
+                </label>
+                <p class="form-get-a-consultation__errors form-element-error"></p>
+            </div>
+        </div>
+        <button class="form-get-a-consultation__button">Отправить</button>
+    </form>
+    <form class="form-order-a-call" novalidate>
+        <h2 class="form-order-a-call__title">Заказать звонок</h2>
+        <button type="button" class="btn-close-form"></button>
+        <div class="form-order-a-call__cover">
+            <label class="form-order-a-call__label">Ваше имя *</label>
+            <input type="text" class="form-order-a-call__input form-order-a-call__input-name" placeholder="Имя" required>
+            <p class="form-order-a-call__errors form-element-error"></p>
+        </div>
+        <div class="form-order-a-call__cover">
+            <label class="form-order-a-call__label">Ваш телефон *</label>
+            <input type="tel" id="form-order-a-call__input-tel" class="form-order-a-call__input form-order-a-call__input-tel input-tel-mask" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
+            <p class="form-order-a-call__errors form-element-error"></p>
+        </div>
+        <div class="form-order-a-call__cover">
+            <div class="agreement">
+                <input type="checkbox" id="form-order-a-call__checkbox" class="agreement__checkbox" required>
+                <label for="form-order-a-call__checkbox" class="agreement__label">
+                    <span class="agreement__description">Даю согласие на обработку моих персональных данных и принимаю <a href="#">политику конфиденциальности</a></span>
+                </label>
+                <p class="form-order-a-call__errors form-element-error"></p>
+            </div>
+        </div>
+        <button class="form-order-a-call__button">Отправить</button>
+    </form>
+    <button class="btn-up"></button>
+    <button class="btn-order-call"></button>
     <div class="header-bg">
         <header class="header">
             <div class="container">
@@ -56,9 +150,37 @@
                                 <li class="header-inner__item">
                                     <a href="#" class="header-inner__link">о нас</a>
                                 </li>
-                                <li class="header-inner__item">
-                                    
+                                <li class="header-inner__item header-inner__item-services">
                                     <a href="#" class="header-inner__link">услуги</a>
+                                    <ul class="header-inner__menu-block">
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Ремонт компьютеров</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Ремонт ноутбуков</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Ремонт моноблоков</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Ремонт техники Apple</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Сборка и апгрейд компьютеров</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Установка ОС и программ</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Удаление вирусов</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Настройка интернета</a>
+                                        </li>
+                                        <li class="menu-block__item">
+                                            <a href="#" class="menu-block__link">Корпоративным клиентам</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="header-inner__item">
                                     
@@ -101,6 +223,60 @@
         </header>
         <div class="container">
             <div class="banner">
+                <div class="container menu-modal">
+                    <ul class="menu-modal__list">
+                        <li class="menu-modal__item">
+                            <a href="#" class="menu-modal__link">Главная</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="#" class="menu-modal__link">О компании</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <div class="menu-modal__content-flex">
+                                <p href="#" class="menu-modal__link">Услуги</p>
+                                <img src="images/pop-up-windows/open_close_menu_mobi.svg" class="menu-modal__img" alt="open_close_menu_mobi.svg">
+                            </div>
+                            <ul class="menu-modal__list-drop">
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Ремонт компьютеров</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Ремонт ноутбуков</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Ремонт моноблоков</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Ремонт техники Apple</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Сборка и апгрейд компьютеров</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Установка ОС и программ</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Удаление вирусов</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Настройка интернета</a>
+                                </li>
+                                <li class="list-drop__item">
+                                    <a href="" class="list-drop__link">Корпоративным клиентам</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="#" class="menu-modal__link">Прайс лист</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="#" class="menu-modal__link">Отзывы</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="#" class="menu-modal__link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="banner__inner-text">
                     <h1 class="banner__title">оперативная компьютерная помощь </h1>
                     <p class="banner__description">Ремонт любой сложности ПК, ноутбуков и техники Apple для дома и офиса</p>
@@ -304,17 +480,17 @@
                     <div class="master-box__cover">
                         <label class="master-box__label">Ваше имя *</label>
                         <input type="text" class="master-box__input master-box__input-name" placeholder="Имя" required>
-                        <p class="master-box__errors"></p>
+                        <p class="master-box__errors form-element-error"></p>
                     </div>
                     <div class="master-box__cover">
                         <label class="master-box__label">Ваш телефон *</label>
-                        <input type="tel" id="master-box__input-tel" class="master-box__input master-box__input-tel" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
-                        <p class="master-box__errors"></p>
+                        <input type="tel" id="master-box__input-tel" class="master-box__input master-box__input-tel input-tel-mask" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
+                        <p class="master-box__errors form-element-error"></p>
                     </div>
                     <div class="master-box__cover">
                         <label class="master-box__label">Опишите проблему *</label>
                         <textarea class="master-box__textarea" placeholder="Текст сообщения" required></textarea>
-                        <p class="master-box__errors"></p>
+                        <p class="master-box__errors form-element-error"></p>
                     </div>
                     <div class="master-box__cover">
                         <div class="agreement">
@@ -322,7 +498,7 @@
                             <label for="agreement__checkbox" class="agreement__label">
                                 <span class="agreement__description">Даю согласие на обработку моих персональных данных и принимаю <a href="#">политику конфиденциальности</a></span>
                             </label>
-                            <p class="master-box__errors"></p>
+                            <p class="master-box__errors form-element-error"></p>
                         </div>
                     </div>
                     <button class="master-box__button">Отправить</button>
@@ -776,6 +952,10 @@
     <script src="scripts/slider-customer-reviews.js" type="module"></script>
     <script src="scripts/slider-team.js" type="module"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/form-call-a-master-modal.js"></script>
+    <script src="scripts/form-get-a-consultation-modal.js"></script>
+    <script src="scripts/menu-modal.js"></script>
+    <script src="scripts/btn_fixed.js"></script>
 
  </body>
  </html>

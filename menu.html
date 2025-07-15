@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form class="form-order-a-call" novalidate>
+        <h2 class="form-order-a-call__title">Вызвать мастера</h2>
+        <div class="form-order-a-call__cover">
+            <label class="form-order-a-call__label">Ваше имя *</label>
+            <input type="text" class="form-order-a-call__input form-order-a-call__input-name" placeholder="Имя" required>
+            <p class="form-order-a-call__errors"></p>
+        </div>
+        <div class="form-order-a-call__cover">
+            <label class="form-order-a-call__label">Ваш телефон *</label>
+            <input type="tel" id="form-order-a-call__input-tel" class="form-order-a-call__input form-order-a-call__input-tel" placeholder="+7 ( ___ ) ___-__-__"  pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required>
+            <p class="form-order-a-call__errors"></p>
+        </div>
+        <div class="form-order-a-call__cover">
+            <div class="agreement">
+                <input type="checkbox" id="agreement__checkbox" class="agreement__checkbox" required>
+                <label for="agreement__checkbox" class="agreement__label">
+                    <span class="agreement__description">Даю согласие на обработку моих персональных данных и принимаю <a href="#">политику конфиденциальности</a></span>
+                </label>
+                <p class="form-order-a-call__errors"></p>
+            </div>
+        </div>
+        <button class="form-order-a-call__button">Отправить</button>
+    </form>
+
+
+    <!--<div class="success-order-a-call">
+        <img src="images/pop-up-windows/success-submit.svg" alt="images/pop-up-windows/success-submit.svg" class="success-order-a-call__success">
+        <img class="success-order-a-call__close" src="images/pop-up-windows/close.svg" alt="images/pop-up-windows/close.svg">
+        <p class="success-order-a-call__text">Запрос отправлен. Мастер нашего сервисного центра перезвонит Вам в течение 10 минут</p>
+    </div>-->
+
+
+    <!--<div class="success-get-a-consultation">
+        <img src="images/pop-up-windows/success-submit.svg" alt="images/pop-up-windows/success-submit.svg" class="success-get-a-consultation__success">
+        <img class="success-get-a-consultation__close" src="images/pop-up-windows/close.svg" alt="images/pop-up-windows/close.svg">
+        <p class="success-get-a-consultation__text">Запрос отправлен. Мастер нашего сервисного центра свяжется с Вами в ближайшее время</p>
+    </div>-->
+
+
+
+    <!--<div class="success-leave-feedback">
+        <img src="images/pop-up-windows/success-submit.svg" alt="images/pop-up-windows/success-submit.svg" class="success-leave-feedback__success">
+        <img class="success-leave-feedback__close" src="images/pop-up-windows/close.svg" alt="images/pop-up-windows/close.svg">
+        <p class="success-leave-feedback__text">Благодарим за оставленный отзыв!</p>
+    </div>-->
+
+</body>
+</html>

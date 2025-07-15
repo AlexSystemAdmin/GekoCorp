@@ -132,6 +132,78 @@ ul{
     letter-spacing: -1px;
 }
 
+.btn-up{
+    display: none;
+    position: fixed;
+    background-image: url(../images/pop-up-windows/Up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    border-radius: 100%;
+    width: clamp(3.125rem, 9vw, 6.188rem);
+    height: clamp(3.125rem, 9vw, 6.188rem);
+    cursor: pointer;
+    right: 50px;
+    bottom: 50px;
+    transition: .3s;
+    z-index: 10;
+}
+
+.btn-order-call{
+    display: none;
+    position: fixed;
+    background-image: url(../images/pop-up-windows/Order_call.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    border-radius: 100%;
+    width: clamp(3.125rem, 9vw, 6.188rem);
+    height: clamp(3.125rem, 9vw, 6.188rem);
+    cursor: pointer;
+    right: 50px;
+    /*right: 2%;*/
+    bottom: clamp(7.5rem, 15vw + 2rem, 12.5rem);
+    transition: .3s;
+    z-index: 10;
+    animation: btn-order-call 3s infinite;
+}
+
+@keyframes btn-order-call {
+    0%{
+        right: 48px;
+    }
+
+    10%{
+        right: 52px;
+    }
+
+    20%{
+        right: 48px;
+    }
+
+    30%{
+        right: 52px;
+    }
+
+    40%{
+        right: 48px;
+    }
+
+    50%{
+        right: 52px;
+    }
+
+    50%{
+        right: 50px;
+    }
+
+    100%{
+        right: 50px;
+    }
+}
+
 
 @media(hover:hover){
     .phone-numbers__tel:hover{
@@ -146,6 +218,14 @@ ul{
         background: var(--dark-blue);
         border: 1px solid rgba(231, 116, 46, 1);
         color: var(--orange);
+    }
+
+    .btn-up:hover{
+        opacity: 0.7;
+    }
+
+    .btn-order-call:hover{
+        opacity: 0.7;
     }
 }
 

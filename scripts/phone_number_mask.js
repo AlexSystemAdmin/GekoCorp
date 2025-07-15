@@ -2,12 +2,13 @@
 
 import IMask from '../node_modules/imask/esm/index.js';
 
-const element = document.getElementById('master-box__input-tel');
+let input_tel = document.querySelectorAll('.input-tel-mask');
 
 const maskOptions = {
     mask: '+{7}(000)000-00-00'
 };
 
-const mask = IMask(element, maskOptions);
-mask.autoUnmesk = true;
-export default mask;
+for(let i = 0; i < input_tel.length; i++){
+    let mask = IMask(input_tel[i], maskOptions);
+    mask.autoUnmesk = true;
+}
