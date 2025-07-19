@@ -8,12 +8,12 @@ let menu_modal_list_drop = document.querySelector('.menu-modal__list-drop');
 
 menu_btn.addEventListener('click', () => {
     if(menu_modal.style.left < "0px"){
-        menu_btn.style.backgroundImage = "url('../images/header/menu-button-close.svg')";
+        menu_btn.style.backgroundImage = "url('./images/header/menu-button-close.svg')";
         menu_modal.style.left = "0px";
     }
 
     else{
-        menu_btn.style.backgroundImage = "url('../images/header/menu-button.svg')";
+        menu_btn.style.backgroundImage = "url('./images/header/menu-button.svg')";
         menu_modal.style.left = "-4000px";
     }
 })
