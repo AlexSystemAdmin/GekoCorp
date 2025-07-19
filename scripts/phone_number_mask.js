@@ -1,6 +1,6 @@
 'use strict'
 
-import IMask from '../imask/esm/index.js';
+//import IMask from '../imask/esm/index.js';
 
 let input_tel = document.querySelectorAll('.input-tel-mask');
 
