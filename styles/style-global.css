@@ -133,8 +133,9 @@ ul{
 }
 
 .btn-up{
-    display: none;
     position: fixed;
+    visibility: hidden;
+    opacity: 0;
     background-image: url(../images/pop-up-windows/Up.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -151,8 +152,9 @@ ul{
 }
 
 .btn-order-call{
-    display: none;
     position: fixed;
+    visibility: hidden;
+    opacity: 0;
     background-image: url(../images/pop-up-windows/Order_call.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -221,11 +223,11 @@ ul{
     }
 
     .btn-up:hover{
-        opacity: 0.7;
+        opacity: 0.7!important;
     }
 
     .btn-order-call:hover{
-        opacity: 0.7;
+        opacity: 0.7!important;
     }
 }
 

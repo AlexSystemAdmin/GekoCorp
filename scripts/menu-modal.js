@@ -19,7 +19,6 @@ menu_btn.addEventListener('click', () => {
 })
 
 menu_modal_content_flex.addEventListener('click', () => {
-    console.log(menu_modal_list_drop.firstElementChild);
 
     if(window.getComputedStyle(menu_modal_list_drop).maxHeight == "0px"){
         menu_modal_img.style.transform = "rotate(180deg)";
@@ -36,5 +35,4 @@ menu_modal_content_flex.addEventListener('click', () => {
         menu_modal_list_drop.parentNode.style.paddingBottom = "12px";
         menu_modal_list_drop.style.maxHeight = "0";
     }
-    console.log(window.getComputedStyle(menu_modal_list_drop).maxHeight);
 })

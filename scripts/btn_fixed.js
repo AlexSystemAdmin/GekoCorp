@@ -10,13 +10,25 @@ let scroll_width = window.innerWidth - document.documentElement.clientWidth
 window.addEventListener("scroll", () => {
     //console.log(form_order_a_call_close);
     if(window.scrollY > 2000){
-        btn_up.style.display = "block";
-        btn_order_call.style.display = "block";
+        /*btn_up.style.display = "block";
+        btn_order_call.style.display = "block";*/
+
+        btn_order_call.style.visibility = "visible";
+        btn_order_call.style.opacity = "1";
+
+        btn_up.style.visibility = "visible";
+        btn_up.style.opacity = "1";
     }
 
     else{
-        btn_up.style.display = "none";
-        btn_order_call.style.display = "none";
+        /*btn_up.style.display = "none";
+        btn_order_call.style.display = "none";*/
+
+        btn_order_call.style.opacity = "0";
+        btn_order_call.style.visibility = "hidden";
+
+        btn_up.style.opacity = "0";
+        btn_up.style.visibility = "hidden";
     }
 })
 
