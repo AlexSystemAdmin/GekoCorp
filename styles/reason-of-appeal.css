@@ -44,12 +44,14 @@
 
 .reason-of-appeal__link{
     display: block;
+    color: var(--white);
     font-weight: 600;
     font-size: clamp(1.25rem, 1vw + 0.75rem, 1.5rem);
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
     transition: .3s;
+    cursor: pointer;
 }
 
 .reason-of-appeal__link-flex::before{

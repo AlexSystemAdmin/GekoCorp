@@ -3,12 +3,11 @@
 let form_get_a_consultation = document.querySelector('.form-get-a-consultation');
 let form_get_a_consultation_open = document.querySelector('.get-a-consultation');
 let form_get_a_consultation_close = document.querySelector('.form-get-a-consultation .btn-close-form');
+let reason_of_appeal_link = document.querySelector(".reason-of-appeal__link");
 
 form_get_a_consultation_open.addEventListener('click', () => {
     form_get_a_consultation.style.top = `${window.scrollY}px`;
     document.body.style.overflow = 'hidden';
-    /*document.querySelector(".btn-order-call").style.marginRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
-    document.querySelector(".btn-up").style.marginRight = `${window.innerWidth - document.documentElement.clientWidth}px`;*/
     btn_order_call.style.marginRight = `${scroll_width}px`;
     btn_up.style.marginRight = `${scroll_width}px`;
 })
@@ -33,4 +32,11 @@ form_get_a_consultation_close.addEventListener('click', () => {
     get_a_consultation_inputName.value = "";
     get_a_consultation_inputTtel.value = "";
     get_a_consultation_checkBox.checked = false;
+})
+
+reason_of_appeal_link.addEventListener("click", () => {
+    form_get_a_consultation.style.top = `${window.scrollY}px`;
+    document.body.style.overflow = 'hidden';
+    btn_order_call.style.marginRight = `${scroll_width}px`;
+    btn_up.style.marginRight = `${scroll_width}px`;
 })
