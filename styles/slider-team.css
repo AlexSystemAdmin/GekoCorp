@@ -1,6 +1,6 @@
 .team{
-    padding-top: 41px;
-    padding-bottom: 4px;
+    padding-top: 2.5625rem; /* 41px */
+    padding-bottom: 0.25rem; /* 4px */
 }
 
 .slider-team__title{

@@ -1,0 +1,19 @@
+.team--about .slider-team__title{
+    margin-bottom: 2.75rem; /* 44px */
+}
+
+@media(max-width: 48.75rem){
+    .team--about{
+        padding-top: 1.8125rem; /* 29px */
+        padding-bottom: 1.5rem; /* 24px */
+    }
+
+    .team--about .slider-team__title{
+        padding-bottom: 1.125rem; /* 18px */
+        margin-bottom: 2rem; /* 32px */
+    }
+
+    .team--about .swiper-container{
+        margin-bottom: 1.75rem; /* 28px */
+    }
+}

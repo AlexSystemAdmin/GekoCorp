@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="icon" href="../images/header/logo.svg" type="icon">
     <link rel="stylesheet" href="../styles/style-global.css">
     <link rel="stylesheet" href="../styles/style-header.css">
     <link rel="stylesheet" href="../styles/style-header-mod.css">
     <link rel="stylesheet" href="../styles/about/service.css">
+    <link rel="stylesheet" href="../styles/slider-team.css">
+    <link rel="stylesheet" href="../styles/about/slider-team.css">
+    <link rel="stylesheet" href="../styles/slider-customer-reviews.css">
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
     <title>About</title>
 </head>
 <body>
@@ -140,6 +144,43 @@
             </div>
         </div>
     </section>
+    <section class="team team--about">
+        <div class="container">
+            <div class="swiper-container slider-team">
+                <h2 class="slider-team__title">Наша команда</h2>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__img" src="../images/team/master.jpg" alt="images/team/master.jpg">
+                    <p class="swiper-slide__name">Сергей Александров</p>
+                    <p class="swiper-slide__experience">Опыт работы – 10 лет</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__img" src="../images/team/master.jpg" alt="images/team/master.jpg">
+                    <p class="swiper-slide__name">Сергей Александров</p>
+                    <p class="swiper-slide__experience">Опыт работы – 10 лет</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__img" src="../images/team/master.jpg" alt="images/team/master.jpg">
+                    <p class="swiper-slide__name">Сергей Александров</p>
+                    <p class="swiper-slide__experience">Опыт работы – 10 лет</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__img" src="../images/team/master.jpg" alt="images/team/master.jpg">
+                    <p class="swiper-slide__name">Сергей Александров</p>
+                    <p class="swiper-slide__experience">Опыт работы – 10 лет</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__img" src="../images/team/master.jpg" alt="images/team/master.jpg">
+                    <p class="swiper-slide__name">Сергей Александров</p>
+                    <p class="swiper-slide__experience">Опыт работы – 10 лет</p>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination-team"></div>
+        </div>
+    </section>
     
+    <script src="../scripts/slider-team.js" type="module"></script>
+    <script src="../swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
