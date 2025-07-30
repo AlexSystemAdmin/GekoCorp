@@ -1,0 +1,15 @@
+.header--mod{
+    background: var(--dark-blue);
+}
+
+.header--mod .header-inner{
+    padding-top: 2.5rem;
+    padding-bottom: 2.125rem;
+}
+
+@media(max-width: 48.75rem){
+    .header--mod .header-inner{
+        padding-top: 1.625rem;
+        padding-bottom: 1.6875rem;
+    }
+}
