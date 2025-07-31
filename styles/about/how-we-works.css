@@ -1,0 +1,175 @@
+.how-we-works__bg{
+    background-color: var(--dark-blue);
+    margin-bottom: 2.625rem; /* 42px */
+}
+
+.tesis{
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 1.75rem; /* 28px */
+    align-items: center;
+    padding: 1.75rem /* 28px */ 0 1.5rem /* 24px */ 0;
+}
+
+.tesis__img{
+    width: clamp(4.625rem, 17vw - 3rem, 9rem);
+    height: clamp(6.25rem, 21vw - 3rem, 12.125rem);
+}
+
+.tesis__text{
+    font-weight: 500;
+    font-size: clamp(1.25rem, 1vw + 0.8rem, 1.5rem);
+    line-height: 1.3;
+    color: var(--white);
+    padding: 2.375rem /* 38px */ 0 2.5rem /* 40px */ 0;
+    border-top: 3px solid var(--orange);
+    border-bottom: 3px solid var(--orange);
+    max-width: 56.75rem; /* 908px */
+}
+
+.sequence-of-actions{
+    max-width: 67.5rem; /* 1080px */
+    margin: 0 auto 3.5rem /* 56px */;
+}
+
+.sequence-of-actions__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 3.2vw + 0.8rem, 3rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    margin-bottom: 1.4375rem; /* 23px */
+}
+
+.sequence-of-actions__img{
+    display: block;
+    margin: 0 auto 1.25rem /* 20px */;
+}
+
+.sequence-of-actions__text{
+    max-width: 44.5rem; /* 712px */
+    font-weight: 400;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.41;
+    text-align: center;
+    color: var(--dark-blue);
+    margin: 0 auto 1.6875rem; /* 27px */
+}
+
+.button--call-a-master-about{
+    display: block;
+    margin: 2.875rem /* 46px */ auto 2rem /* 32px */;
+}
+
+.sequence-of-actions__link{
+    display: block;
+    max-width: 18.5625rem; /* 297px */
+    font-weight: 500;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--orange);
+    margin: 0 auto 3.75rem /* 60px */;
+    padding-bottom: 0.625rem; /* 10px */
+    transition: .2s;
+}
+
+.sequence-of-actions__baner{
+    /*max-width: 100%;
+    max-height: clamp(19.875rem, 33vw + 6rem, 26.5rem);*/
+    display: block;
+    background-image: url(../../images/about/how-we-works/Graphic\ master.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: clamp(19.875rem, 33vw + 6rem, 26.5rem);
+}
+
+.sequence-of-actions__baner-mobi{
+    display: none;
+    background-image: url(../../images/about/how-we-works/Graphic\ master\ mobi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: clamp(19.875rem, 33vw + 6rem, 26.5rem);
+}
+
+@media(hover: hover){
+    .sequence-of-actions__link:hover{
+        opacity: 0.5;
+    }
+}
+
+@media(max-width: 43.75rem){
+    .tesis{
+        padding-top: 1.5rem;
+        padding-bottom: 2.1875rem; /* 35px */
+        flex-direction: column;
+        gap: 1rem; /* 16px */
+    }
+
+    .tesis__cover{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .tesis__cover::before{
+        content: '';
+        display: block;
+        width: 7.375rem; /* 118px */
+        height: 2px;
+        background-color: var(--orange);
+    }
+
+    .tesis__cover::after{
+        content: '';
+        display: block;
+        width: 7.375rem; /* 118px */
+        height: 2px;
+        background-color: var(--orange);
+    }
+
+    .tesis__text{
+        border-top: none;
+        border-bottom: 2px solid var(--orange);
+        text-align: center;
+        max-width: 21.875rem; /* 350px */
+        padding-top: 0;
+        padding-bottom: 1.6875rem; /* 27px */
+    }
+
+    .how-we-works__bg {
+        margin-bottom: 1.8125rem; /* 29px */
+    }
+
+    .sequence-of-actions{
+        margin-bottom: 0;
+    }
+
+    .sequence-of-actions__text {
+        line-height: 1.4;
+    }
+
+    .button--call-a-master-about {
+        margin-top: 2.4375rem; /* 39px */
+        margin-bottom: 1.5rem; /* 24px */
+    }
+
+    .sequence-of-actions__link{
+        margin-bottom: 1.6875rem; /* 27px */
+    }
+
+    .sequence-of-actions__baner{
+        display: none;
+    }
+
+    .sequence-of-actions__baner-mobi{
+        display: block;
+    }
+}
