@@ -1,0 +1,202 @@
+.payment-methods{
+    padding-top: 2.625rem; /* 42px */
+    padding-bottom: 2.5rem; /* 40px */
+}
+
+.payment-methods__title{
+    font-weight: 500;
+    font-size: clamp(2.125rem, 2.5vw + 1.25rem, 3rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    margin-bottom: 0.9375rem; /* 15px */
+}
+
+.payment-methods__description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 3.5rem; /* 56px */
+}
+
+.payment-methods__individual-title{
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+}
+
+.payment-methods__individual-grid{
+    display: grid;
+    /*grid-template-columns: repeat(1, 1fr 1px 1fr 1px 1fr 1px 1fr);*/
+    grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+    column-gap: 0.75rem; /* 12px */
+    margin-bottom: 1.5625rem; /* 25px */
+}
+
+.payment-methods__individual-item{
+    text-align: center;
+    padding-top: 1.75rem; /* 28px */
+}
+
+.payment-methods__individual-item-border{
+    width: 1px;
+    height: 100%;
+    background-color: var(--light-grey);
+}
+
+/*.payment-methods__individual-item--individual-visa-mir{
+    border-left: 1px solid var(--light-grey);
+    border-right: 0.5px solid var(--light-grey);
+}
+
+.payment-methods__individual-item--individual-sber{
+    border-left: 0.5px solid var(--light-grey);
+    border-right: 1px solid var(--light-grey);
+    
+}*/
+
+.payment-methods__individual-grid-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.payment-methods__individual-grid-title--individual-cash{
+    margin-bottom: 2.625rem; /* 42px */
+}
+
+.payment-methods__individual-grid-title--individual-visa-mir{
+    margin-bottom: 3.25rem; /* 52px */
+}
+
+.payment-methods__individual-grid-title--individual-sber{
+    margin-bottom: 1.6875rem; /* 27px */
+}
+
+.payment-methods__individual-grid-title--individual-pay{
+    margin-bottom: 3rem; /* 48px */
+}
+
+.payment-methods__individual-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--dark-blue);
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 1.625rem; /* 26px */
+    margin-bottom: 1.75rem; /* 28px */
+}
+
+.payment-methods__legal-entity-title{
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+.payment-methods__legal-entity-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+.payment-methods__legal-entity-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+@media(max-width: 56.25rem){ /* 900px */
+    .payment-methods__individual-grid{
+        grid-template-columns: 1fr 1px 1fr;
+        row-gap: 2.5rem; /* 40px */
+    }
+
+    .payment-methods__individual-item-border--centre{
+        display: none;
+    }
+}
+
+@media(max-width: 34.375rem){ /* 550px */
+    .payment-methods {
+        padding-top: 1.8125rem; /* 29px */
+        padding-bottom: 2.4375rem; /* 39px */
+    }
+
+    .payment-methods__title {
+        margin-bottom: 1.0625rem; /* 17px */
+    }
+
+    .payment-methods__description {
+        margin-bottom: 3.4375rem; /* 55px */
+    }
+
+    .payment-methods__individual-grid{
+        grid-template-columns: auto;
+        row-gap: 1.5625rem; /* 25px */
+    }
+
+    .payment-methods__individual-item {
+        padding-top: 1.25rem; /* 20px */
+    }
+
+    .payment-methods__individual-item--individual-cash{
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 1.125rem; /* 18px */
+    }
+
+    .payment-methods__individual-item--individual-visa-mir{
+        padding-top: 0;
+        padding-bottom: 0.75rem; /* 12px */
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .payment-methods__individual-item--individual-sber{
+        padding-top: 0.3125rem; /* 5px */
+        padding-bottom: 1.0625rem; /* 17px */
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .payment-methods__individual-item--individual-pay{
+        padding-top: 0;
+    }
+
+    .payment-methods__individual-grid-title--individual-cash {
+        margin-bottom: 0.9375rem; /* 15px */
+    }
+
+    .payment-methods__individual-grid-title--individual-visa-mir {
+        margin-bottom: 0.9375rem; /* 15px */
+    }
+
+    .payment-methods__individual-grid-title--individual-sber {
+        margin-bottom: 0.8125rem; /* 13px */
+    }
+
+    .payment-methods__individual-grid-title--individual-pay{
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    .payment-methods__individual-item-border{
+        display: none;
+    }
+}
