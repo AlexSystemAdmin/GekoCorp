@@ -1,0 +1,18 @@
+
+@media (max-width: 47.4375rem) {
+    .container--customer-reviews {
+        padding-bottom: 1.8125rem; /* 29px */
+    }
+
+    .swiper-pagination {
+        bottom: 7.5rem !important;
+    }
+
+    .swiper-container--about{
+        margin-bottom: 4.1875rem;
+    }
+
+    .customer-reviews__link{
+        margin-bottom: 0.375rem; /* 6px */
+    }
+}
