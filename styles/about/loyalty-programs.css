@@ -1,6 +1,5 @@
 .loyalty-programs{
     padding-top: 2.5rem; /* 40px */
-    padding-bottom: 3.75rem; /* 60px */
 }
 
 .loyalty-programs__title{
@@ -119,9 +118,6 @@
 }
 
 @media(max-width: 43.75rem){
-    .loyalty-programs {
-        padding-bottom: 2.5rem; /* 40px */
-    }
 
     .loyalty-programs__loyalty-programs-grid{
         grid-template-columns: auto;
